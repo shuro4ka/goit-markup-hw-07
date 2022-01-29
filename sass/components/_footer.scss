@@ -1,0 +1,116 @@
+.footer {
+    background-color: var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .address {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .address-item:not(:last-of-type) {
+    margin-bottom: 9px;
+  }
+  .address-map {
+    color: var(--letter-color);
+    transition: color var(--animation-function);
+  }
+  .address-map:hover,
+  .address-map:focus {
+    color: var(--brand-color);
+  }
+  .address-mail {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation-function);
+  }
+  .address-mail:hover,
+  .address-mail:focus {
+    color: var(--brand-color);
+  }
+  .address-tel {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation-function);
+  }
+  .address-tel:hover,
+  .address-tel:focus {
+    color: var(--brand-color);
+  }
+  .footer-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--letter-color);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-left {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+  .footer-right {
+    margin-right: 93px;
+  }
+  
+  .footer-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--letter-color);
+    transition: background-color, color, var(--animation-function);
+  }
+  .footer-link:hover,
+  .footer-link:focus {
+    background-color: var(--brand-color);
+    color: var(--letter-color);
+  }
+  .subscribe {
+    display: flex;
+  
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .input-wrapper .hero-button {
+    margin-top: 0;
+   
+    margin-left: 12px;
+  }
+  .input-wrapper .form-input {
+    width: 350px;
+    height: 50px;
+  }
+  .button-icon {
+    transition: fill var(--animation-function);
+    fill: var(--letter-color); 
+    margin-left: 10px;  
+  }
+  
+  .footer-button {
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+  
+  
+  }
+  
+  .footer-middle {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .footer-input {
+    outline: 0;
+    background-color: var(--footer-color);
+    color: var(--letter-color);
+  }
+  
