@@ -10,13 +10,13 @@
   .clients-list {
     display: flex;
     justify-content: center;
-  }
-  .clients-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .clients-item:nth-child(6n) {
-    margin-right: 0;
-  }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:nth-child(6n) {
+        margin-right: 0;
+      }
+    }
   
   .clients-link {
     outline: 0;
@@ -38,9 +38,4 @@
   .clients-icon {
     fill: currentColor;
   }
-  // }
-  // .clients-link:hover,
-  // .clients-link:focus {
-  //   color: var(--brand-color);
-  // }
-  
+ 
