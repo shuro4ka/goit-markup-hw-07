@@ -29,17 +29,11 @@
     border-radius: 3px;
     border: 1px solid var(--icon-color);
     transition: fill, border-color var(--animation-function);
-  }
-  
-  .form-input:hover,
-  .form-input:focus {
-    border-color: var(--brand-color);
-  }
-  
-  .form-input:focus ~ .input-icon,
-  .form-input:hover ~ .input-icon {
-    fill: var(--brand-color);
-  } 
+    &:hover,
+    &:focus {
+      border-color: var(--brand-color);
+    }
+    }
   
   .input-icon {
     position: absolute;
@@ -110,19 +104,22 @@
     border-color: var(--icon-color);
     outline: 0;
     transition: border-color var(--animation-function);
-    
-  }
+    &:hover,
+    &:focus {
+      border-color: var(--brand-color);
+    }
+    &::placeholder {
+        color: var(--icon-color);
+        transition: color var(--animation-function);
+    }
+    &:hover::placeholder {
+      color:var(--brand-color);
+    }
+  } 
   
-  .form-textarea::placeholder {
-    color: var(--icon-color);
-    transition: color var(--animation-function);
-  }
   
-  .form-textarea:hover,
-  .form-textarea:focus {
-    border-color: var(--brand-color);
-  }
   
-  .form-textarea:hover::placeholder {
-    color:var(--brand-color);
-  }
+  
+  // .form-textarea:hover::placeholder {
+  //   color:var(--brand-color);
+  // }

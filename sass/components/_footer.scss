@@ -16,27 +16,30 @@
   .address-map {
     color: var(--letter-color);
     transition: color var(--animation-function);
-  }
-  .address-map:hover,
-  .address-map:focus {
-    color: var(--brand-color);
-  }
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+      }
+      }
+  
   .address-mail {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation-function);
-  }
-  .address-mail:hover,
-  .address-mail:focus {
-    color: var(--brand-color);
-  }
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+      }
+      }
+  
   .address-tel {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation-function);
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
   }
-  .address-tel:hover,
-  .address-tel:focus {
-    color: var(--brand-color);
   }
+  
   .footer-text {
     font-weight: 700;
     font-size: 14px;
@@ -63,12 +66,13 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--letter-color);
     transition: background-color, color, var(--animation-function);
-  }
-  .footer-link:hover,
-  .footer-link:focus {
-    background-color: var(--brand-color);
-    color: var(--letter-color);
-  }
+      &:hover,
+      &:focus {
+      background-color: var(--brand-color);
+      color: var(--letter-color);
+    }
+    }
+  
   .subscribe {
     display: flex;
   
