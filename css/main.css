@@ -100,11 +100,11 @@ body {
   margin-right: 93px;
 }
 
-.logo-dark {
+.logo__dark {
   color: var(--accent-color);
 }
 
-.logo-light {
+.logo__light {
   color: var(--letter-color);
 }
 
@@ -245,7 +245,7 @@ body {
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -255,7 +255,7 @@ body {
   text-align: center;
 }
 
-.hero-button {
+.hero__button {
   background-color: var(--brand-color);
   font-family: Roboto;
   font-weight: 700;
@@ -274,7 +274,7 @@ body {
   height: 50px;
 }
 
-.hero-button:hover, .hero-button:active {
+.hero__button:hover, .hero__button:active {
   background-color: #55a7eb;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -462,7 +462,16 @@ body {
   color: var(--letter-color);
 }
 
-.clients-title {
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -472,24 +481,15 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-item:nth-child(6n) {
+.clients__item:nth-child(6n) {
   margin-right: 0;
 }
 
-.clients-link {
+.clients__link {
   outline: 0;
   width: 170px;
   height: 92px;
@@ -510,11 +510,11 @@ body {
   transition: color var(--animation-function);
 }
 
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   color: var(--brand-color);
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
@@ -532,41 +532,41 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address-item:not(:last-of-type) {
+.address__item:not(:last-of-type) {
   margin-bottom: 9px;
 }
 
-.address-map {
+.address__map {
   color: var(--letter-color);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
 }
 
-.address-map:hover, .address-map:focus {
+.address__map:hover, .address__map:focus {
   color: var(--brand-color);
 }
 
-.address-mail {
+.address__mail {
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
 }
 
-.address-mail:hover, .address-mail:focus {
+.address__mail:hover, .address__mail:focus {
   color: var(--brand-color);
 }
 
-.address-tel {
+.address__tel {
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
 }
 
-.address-tel:hover, .address-tel:focus {
+.address__tel:hover, .address__tel:focus {
   color: var(--brand-color);
 }
 
-.footer-text {
+.footer__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -585,25 +585,25 @@ body {
           align-items: baseline;
 }
 
-.footer-left {
+.footer-address {
   margin-right: 70px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.footer-right {
+.footer-media {
   margin-right: 93px;
 }
 
-.footer-link {
+.footer__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--letter-color);
   -webkit-transition: background-color, color, var(--animation-function);
   transition: background-color, color, var(--animation-function);
 }
 
-.footer-link:hover, .footer-link:focus {
+.footer__link:hover, .footer__link:focus {
   background-color: var(--brand-color);
   color: var(--letter-color);
 }
@@ -623,24 +623,24 @@ body {
           align-items: center;
 }
 
-.input-wrapper .hero-button {
+.input-wrapper .hero__button {
   margin-top: 0;
   margin-left: 12px;
 }
 
-.input-wrapper .form-input {
+.input-wrapper .form__input {
   width: 350px;
   height: 50px;
 }
 
-.button-icon {
+.button__icon {
   -webkit-transition: fill var(--animation-function);
   transition: fill var(--animation-function);
   fill: var(--letter-color);
   margin-left: 10px;
 }
 
-.footer-button {
+.footer__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,7 +652,7 @@ body {
           justify-content: center;
 }
 
-.footer-middle {
+.footer-subscription {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,7 +662,7 @@ body {
           flex-direction: column;
 }
 
-.footer-input {
+.footer__input {
   outline: 0;
   background-color: var(--footer-color);
   color: var(--letter-color);
@@ -825,7 +825,7 @@ body {
   padding: 40px;
 }
 
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -847,7 +847,7 @@ body {
   transition: fill var(--animation-function);
 }
 
-.modal-close:hover {
+.modal__close:hover {
   fill: var(--brand-color);
 }
 
@@ -857,7 +857,7 @@ body {
   visibility: hidden;
 }
 
-.modal-title {
+.modal__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
@@ -897,7 +897,7 @@ body {
   margin-top: 20px;
 }
 
-.form-label {
+.form__label {
   font-size: 12px;
   line-height: 1.16;
   color: var(--text-color);
@@ -906,7 +906,7 @@ body {
   position: relative;
 }
 
-.form-input {
+.form__input {
   outline: 0;
   width: 100%;
   margin: 0;
@@ -918,11 +918,11 @@ body {
   transition: fill, border-color var(--animation-function);
 }
 
-.form-input:hover, .form-input:focus {
+.form__input:hover, .form__input:focus {
   border-color: var(--brand-color);
 }
 
-.input-icon {
+.input__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -930,7 +930,7 @@ body {
   transition: fill var(--animation-function);
 }
 
-.check-text {
+.check__text {
   font-size: 14px;
   line-height: 1.2;
   color: #999999;
@@ -941,7 +941,7 @@ body {
   position: relative;
 }
 
-.check-text span {
+.check__text span {
   width: 16px;
   height: 15px;
   border: 2px solid #000000;
@@ -952,38 +952,38 @@ body {
   display: flex;
 }
 
-.policy-icon {
+.policy__icon {
   fill: transparent;
 }
 
-.policy-check:checked + .check-text span {
+.policy-check:checked + .check__text span {
   border: none;
   background-color: var(--brand-color);
 }
 
-.policy-check:checked + .check-text .policy-icon {
+.policy-check:checked + .check__text .policy__icon {
   fill: #ffffff;
 }
 
-.policy-check:checked + .check-text::before {
+.policy-check:checked + .check__text::before {
   border: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.check-hidden {
+.check__hidden {
   position: absolute;
   visibility: hidden;
   opacity: 0;
 }
 
-.modal-link {
+.modal__link {
   color: var(--brand-color);
   text-decoration: underline;
 }
 
-.form-textarea {
+.form__textarea {
   width: 100%;
   height: 120px;
   border: 1px solid;
@@ -996,47 +996,47 @@ body {
   transition: border-color var(--animation-function);
 }
 
-.form-textarea:hover, .form-textarea:focus {
+.form__textarea:hover, .form__textarea:focus {
   border-color: var(--brand-color);
 }
 
-.form-textarea::-webkit-input-placeholder {
+.form__textarea::-webkit-input-placeholder {
   color: var(--icon-color);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
 }
 
-.form-textarea:-ms-input-placeholder {
+.form__textarea:-ms-input-placeholder {
   color: var(--icon-color);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
 }
 
-.form-textarea::-ms-input-placeholder {
+.form__textarea::-ms-input-placeholder {
   color: var(--icon-color);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
 }
 
-.form-textarea::placeholder {
+.form__textarea::placeholder {
   color: var(--icon-color);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
 }
 
-.form-textarea:hover::-webkit-input-placeholder {
+.form__textarea:hover::-webkit-input-placeholder {
   color: var(--brand-color);
 }
 
-.form-textarea:hover:-ms-input-placeholder {
+.form__textarea:hover:-ms-input-placeholder {
   color: var(--brand-color);
 }
 
-.form-textarea:hover::-ms-input-placeholder {
+.form__textarea:hover::-ms-input-placeholder {
   color: var(--brand-color);
 }
 
-.form-textarea:hover::placeholder {
+.form__textarea:hover::placeholder {
   color: var(--brand-color);
 }
 /*# sourceMappingURL=main.css.map */

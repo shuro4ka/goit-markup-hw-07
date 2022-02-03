@@ -10,10 +10,10 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
-  .address-item:not(:last-of-type) {
+  .address__item:not(:last-of-type) {
     margin-bottom: 9px;
   }
-  .address-map {
+  .address__map {
     color: var(--letter-color);
     transition: color var(--animation-function);
       &:hover,
@@ -22,7 +22,7 @@
       }
       }
   
-  .address-mail {
+  .address__mail {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation-function);
       &:hover,
@@ -31,7 +31,7 @@
       }
       }
   
-  .address-tel {
+  .address__tel {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation-function);
       &:hover,
@@ -40,7 +40,7 @@
   }
   }
   
-  .footer-text {
+  .footer__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -55,16 +55,16 @@
     align-items: baseline;
   }
   
-  .footer-left {
+  .footer-address {
     margin-right: 70px;
     flex-grow: 1;
   }
 
-  .footer-right {
+  .footer-media {
     margin-right: 93px;
   }
   
-  .footer-link {
+  .footer__link {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--letter-color);
     transition: background-color, color, var(--animation-function);
@@ -85,34 +85,34 @@
    
   }
   
-  .input-wrapper .hero-button {
+  .input-wrapper .hero__button {
     margin-top: 0; 
     margin-left: 12px;
   }
 
-  .input-wrapper .form-input {
+  .input-wrapper .form__input {
     width: 350px;
     height: 50px;
   }
 
-  .button-icon {
+  .button__icon {
     transition: fill var(--animation-function);
     fill: var(--letter-color); 
     margin-left: 10px;  
   }
   
-  .footer-button {
+  .footer__button {
     display:flex; 
     align-items: center;
     justify-content: center; 
   }
   
-  .footer-middle {
+  .footer-subscription {
     display: flex;
     flex-direction: column;  
   }
 
-  .footer-input {
+  .footer__input {
     outline: 0;
     background-color: var(--footer-color);
     color: var(--letter-color);

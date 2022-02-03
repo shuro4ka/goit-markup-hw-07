@@ -1,4 +1,9 @@
-.clients-title {
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__title {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -7,19 +12,16 @@
     color: #212121;
     margin-bottom: 50px;
   }
-  .clients-list {
-    display: flex;
-    justify-content: center;
-  }
-    .clients-item:not(:last-child) {
+  
+  .clients__item:not(:last-child) {
       margin-right: 30px;
     }
-    .clients-item:nth-child(6n) {
+
+  .clients__item:nth-child(6n) {
         margin-right: 0;
-      }
+   }
     
-  
-  .clients-link {
+  .clients__link {
     outline: 0;
     width: 170px;
     height: 92px;
@@ -36,7 +38,8 @@
       color: var(--brand-color);
     }
   }
-  .clients-icon {
+  
+  .clients__icon {
     fill: currentColor;
   }
  

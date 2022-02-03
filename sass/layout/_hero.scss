@@ -16,7 +16,7 @@
     margin-right: auto;
   }
   
-  .hero-title {
+  .hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -25,7 +25,7 @@
     color: var(--letter-color);
     text-align: center;
   }
-  .hero-button {
+  .hero__button {
     background-color: var(--brand-color);
     font-family: Roboto;
     font-weight: 700;
