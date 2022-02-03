@@ -3,20 +3,20 @@
 @import "./base/common";
 @import "./utils/hidden";
 
-//COMPONENTS
-@import "./components/container";
-@import "./components/header";
-@import "./components/media";
-@import "./components/section";
-@import "./components/contacts";
+//LAYOUT
+@import "./layout/container";
+@import "./layout/header";
+@import "./layout/media";
+@import "./layout/section";
+@import "./layout/contacts";
 
-@import "./components/hero";
-@import "./components/features";
-@import "./components/works";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/filters";
-@import "./components/gallery";
-@import "./components/modal";
-@import "./components/form";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/works";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/filters";
+@import "./layout/gallery";
+@import "./layout/modal";
+@import "./layout/form";

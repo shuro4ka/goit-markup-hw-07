@@ -219,13 +219,12 @@ body {
   transition: color var(--animation-function);
 }
 
-.contacts-item:not(:last-of-type) {
-  margin-right: 50px;
+.contacts-link:hover, .contacts-link:focus {
+  color: var(--brand-color);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--brand-color);
+.contacts-item:not(:last-of-type) {
+  margin-right: 50px;
 }
 
 .hero {
@@ -272,8 +271,7 @@ body {
   height: 50px;
 }
 
-.hero-button:hover,
-.hero-button:active {
+.hero-button:hover, .hero-button:active {
   background-color: #55a7eb;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -455,13 +453,11 @@ body {
 .card-link {
   background-color: #ffffff;
   color: var(--icon-color);
-  /* transition: background-color, color, var(--animation-function); */
   -webkit-transition: background-color var(--animation-function), color, var(--animation-function);
   transition: background-color var(--animation-function), color, var(--animation-function);
 }
 
-.card-link:hover,
-.card-link:focus {
+.card-link:hover, .card-link:focus {
   background-color: var(--brand-color);
   color: var(--letter-color);
 }
@@ -514,13 +510,12 @@ body {
   transition: color var(--animation-function);
 }
 
-.clients-icon {
-  fill: currentColor;
+.clients-link:hover, .clients-link:focus {
+  color: var(--brand-color);
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--brand-color);
+.clients-icon {
+  fill: currentColor;
 }
 
 .footer {
@@ -547,8 +542,7 @@ body {
   transition: color var(--animation-function);
 }
 
-.address-map:hover,
-.address-map:focus {
+.address-map:hover, .address-map:focus {
   color: var(--brand-color);
 }
 
@@ -558,8 +552,7 @@ body {
   transition: color var(--animation-function);
 }
 
-.address-mail:hover,
-.address-mail:focus {
+.address-mail:hover, .address-mail:focus {
   color: var(--brand-color);
 }
 
@@ -569,8 +562,7 @@ body {
   transition: color var(--animation-function);
 }
 
-.address-tel:hover,
-.address-tel:focus {
+.address-tel:hover, .address-tel:focus {
   color: var(--brand-color);
 }
 
@@ -611,8 +603,7 @@ body {
   transition: background-color, color, var(--animation-function);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-link:hover, .footer-link:focus {
   background-color: var(--brand-color);
   color: var(--letter-color);
 }
@@ -712,9 +703,7 @@ body {
   transition: color, box-shadow, background-color, var(--animation-function), -webkit-box-shadow;
 }
 
-.btn-item:hover,
-.btn-item:focus,
-.btn-item:active {
+.btn-item:hover, .btn-item:focus, .btn-item:active {
   color: var(--letter-color);
   background-color: var(--brand-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -804,8 +793,7 @@ body {
   transition: box-shadow var(--animation-function), -webkit-box-shadow var(--animation-function);
 }
 
-.gallery-link:focus,
-.gallery-link:hover {
+.gallery-link:focus, .gallery-link:hover {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
@@ -895,7 +883,7 @@ body {
   position: relative;
 }
 
-.form-field:not(:nth-last-of-type(2), :nth-last-of-type(3)) {
+.form-field {
   margin-bottom: 10px;
 }
 
@@ -930,14 +918,8 @@ body {
   transition: fill, border-color var(--animation-function);
 }
 
-.form-input:hover,
-.form-input:focus {
+.form-input:hover, .form-input:focus {
   border-color: var(--brand-color);
-}
-
-.form-input:focus ~ .input-icon,
-.form-input:hover ~ .input-icon {
-  fill: var(--brand-color);
 }
 
 .input-icon {
@@ -1014,6 +996,10 @@ body {
   transition: border-color var(--animation-function);
 }
 
+.form-textarea:hover, .form-textarea:focus {
+  border-color: var(--brand-color);
+}
+
 .form-textarea::-webkit-input-placeholder {
   color: var(--icon-color);
   -webkit-transition: color var(--animation-function);
@@ -1036,11 +1022,6 @@ body {
   color: var(--icon-color);
   -webkit-transition: color var(--animation-function);
   transition: color var(--animation-function);
-}
-
-.form-textarea:hover,
-.form-textarea:focus {
-  border-color: var(--brand-color);
 }
 
 .form-textarea:hover::-webkit-input-placeholder {
