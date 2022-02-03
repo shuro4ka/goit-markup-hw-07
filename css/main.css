@@ -75,14 +75,29 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80px;
+}
+
 .logo {
-  margin-right: 93px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+}
+
+.header__logo {
+  margin-right: 93px;
 }
 
 .logo-dark {
@@ -93,13 +108,13 @@ body {
   color: var(--letter-color);
 }
 
-.nav {
+.nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-link {
+.nav-list__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -109,26 +124,16 @@ body {
   transition: color var(--animation-function);
 }
 
-.mail-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.tel-icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.nav-link:hover,
-.nav-link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--brand-color);
 }
 
-.nav-link.link.current {
+.nav-list__link.link.current {
   color: var(--brand-color);
 }
 
-.nav-item {
+.nav-list__item {
   margin-right: 50px;
 }
 
@@ -145,18 +150,6 @@ body {
   background-color: var(--brand-color);
   left: 0;
   bottom: -33px;
-}
-
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 80px;
 }
 
 .media-list {
@@ -203,7 +196,11 @@ body {
   margin-left: auto;
 }
 
-.contacts-link {
+.contacts__item:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.contacts__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -219,12 +216,18 @@ body {
   transition: color var(--animation-function);
 }
 
-.contacts-link:hover, .contacts-link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--brand-color);
 }
 
-.contacts-item:not(:last-of-type) {
-  margin-right: 50px;
+.contacts-mail__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts-tel__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .hero {
