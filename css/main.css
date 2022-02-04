@@ -726,12 +726,6 @@ body {
   transition: transform var(--animation-function), -webkit-transform var(--animation-function);
 }
 
-.gallery__link:hover .gallery__content,
-.gallery__link:focus .gallery__content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .gallery-wrapper {
   position: relative;
   overflow: hidden;
@@ -750,10 +744,6 @@ body {
   height: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: color, var(--animation-function), -webkit-transform;
-  transition: color, var(--animation-function), -webkit-transform;
-  transition: color, transform, var(--animation-function);
-  transition: color, transform, var(--animation-function), -webkit-transform;
   overflow: auto;
 }
 
@@ -793,6 +783,14 @@ body {
 .gallery__link:focus, .gallery__link:hover {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gallery__link:hover .gallery__content,
+.gallery__link:focus .gallery__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: var(--animation-function);
+  transition: var(--animation-function);
 }
 
 .backdrop {
