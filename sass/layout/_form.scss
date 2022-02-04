@@ -13,7 +13,6 @@
   }
   
   .form__label {
-    
     font-size: 12px;
     line-height: 1.16;
     color: var(--text-color);
@@ -30,13 +29,10 @@
     border: 1px solid var(--icon-color);
     transition: fill, border-color var(--animation-function);
   }
-  
-  
   .form__input:hover,
   .form__input:focus {
     border-color: var(--brand-color);
   }
-  
   .form__input:focus ~ .input__icon,
   .form__input:hover ~ .input__icon {
     fill: var(--brand-color);
