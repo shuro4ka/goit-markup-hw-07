@@ -20,7 +20,6 @@
     transition: 250ms linear; 
     position:relative;
   }
-  
   .form__input{
     outline: 0;
     width: 100%;
@@ -30,11 +29,18 @@
     border-radius: 3px;
     border: 1px solid var(--icon-color);
     transition: fill, border-color var(--animation-function);
-    &:hover,
-    &:focus {
-      border-color: var(--brand-color);
-    }
-    }
+  }
+  
+  
+  .form__input:hover,
+  .form__input:focus {
+    border-color: var(--brand-color);
+  }
+  
+  .form__input:focus ~ .input__icon,
+  .form__input:hover ~ .input__icon {
+    fill: var(--brand-color);
+  } 
   
   .input__icon {
     position: absolute;
@@ -42,7 +48,7 @@
     left: 15px;
     transition: fill var(--animation-function);   
   }
-  
+    
   .check__text {
     font-size: 14px;
     line-height: 1.2;

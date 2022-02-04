@@ -918,8 +918,14 @@ body {
   transition: fill, border-color var(--animation-function);
 }
 
-.form__input:hover, .form__input:focus {
+.form__input:hover,
+.form__input:focus {
   border-color: var(--brand-color);
+}
+
+.form__input:focus ~ .input__icon,
+.form__input:hover ~ .input__icon {
+  fill: var(--brand-color);
 }
 
 .input__icon {
