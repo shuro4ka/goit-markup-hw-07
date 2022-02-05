@@ -315,14 +315,14 @@ body {
   margin-bottom: 30px;
 }
 
-.features__title {
+.section-title {
+  text-align: center;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 36px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--accent-color);
-  margin-bottom: 10px;
+  color: #212121;
+  margin-bottom: 50px;
 }
 
 .features__text {
@@ -342,7 +342,7 @@ body {
   margin: -15px;
 }
 
-.works__title {
+.section__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -382,7 +382,7 @@ body {
           justify-content: center;
 }
 
-.team-section {
+.team__background {
   background-color: var(--background-color);
 }
 
@@ -394,7 +394,7 @@ body {
       flex-wrap: wrap;
 }
 
-.team-title__main {
+.section-title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -445,7 +445,7 @@ body {
   margin-bottom: 16px;
 }
 
-.content {
+.team__content {
   text-align: center;
   padding: 30px 0;
 }
@@ -471,7 +471,7 @@ body {
           justify-content: center;
 }
 
-.clients__title {
+.section-title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;

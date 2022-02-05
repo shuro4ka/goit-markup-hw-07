@@ -1,4 +1,4 @@
-.team-section {
+.team__background {
   background-color: var(--background-color);
 }
 
@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.team-title__main {
+.section-title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -63,7 +63,7 @@
   margin-bottom: 16px;
 }
 
-.content {
+.team__content {
   text-align: center;
   padding: 30px 0;
 }
