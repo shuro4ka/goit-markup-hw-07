@@ -129,7 +129,7 @@ body {
   color: var(--brand-color);
 }
 
-.nav__link.link.current {
+.nav__link.nav__link--current {
   color: var(--brand-color);
 }
 
@@ -485,10 +485,6 @@ body {
   margin-right: 30px;
 }
 
-.clients__item:nth-child(6n) {
-  margin-right: 0;
-}
-
 .clients__link {
   outline: 0;
   width: 170px;
@@ -681,8 +677,11 @@ body {
           align-items: center;
 }
 
-.btn__item {
+.filter__item {
   margin-right: 8px;
+}
+
+.filter__button {
   border: transparent;
   padding: 8px 22px;
   font-weight: 500;
@@ -700,7 +699,7 @@ body {
   transition: color, box-shadow, background-color, var(--animation-function), -webkit-box-shadow;
 }
 
-.btn__item:hover, .btn__item:focus, .btn__item:active {
+.filter__button:hover, .filter__button:focus, .filter__button:active {
   color: var(--letter-color);
   background-color: var(--brand-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -726,7 +725,7 @@ body {
   transition: transform var(--animation-function), -webkit-transform var(--animation-function);
 }
 
-.gallery-wrapper {
+.gallery__wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -747,7 +746,15 @@ body {
   overflow: auto;
 }
 
-.gallery-border {
+.gallery__link:hover .gallery__content,
+.gallery__link:focus .gallery__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: var(--animation-function);
+  transition: var(--animation-function);
+}
+
+.gallery__box {
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -783,14 +790,6 @@ body {
 .gallery__link:focus, .gallery__link:hover {
   -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.gallery__link:hover .gallery__content,
-.gallery__link:focus .gallery__content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: var(--animation-function);
-  transition: var(--animation-function);
 }
 
 .backdrop {

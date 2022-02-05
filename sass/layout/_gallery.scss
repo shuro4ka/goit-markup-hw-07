@@ -8,7 +8,7 @@
     margin: 15px;
     transition: transform var(--animation-function);
   }
-  .gallery-wrapper {
+  .gallery__wrapper {
     position: relative;
     overflow: hidden;
   }
@@ -24,11 +24,15 @@
     padding: 63px 24px;
     height: 100%;
     transform: translateY(100%);
-    // transition: color, transform, var(--animation-function);
     overflow: auto;
-  }
+    .gallery__link:hover &,
+    .gallery__link:focus & {
+      transform: translateY(0);
+      transition: var(--animation-function);
+    }
+    }
 
-  .gallery-border {
+  .gallery__box {
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
@@ -62,9 +66,4 @@
                 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
                 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
-    &:hover .gallery__content,
-    &:focus .gallery__content{
-      transform: translateY(0);
-      transition: var(--animation-function);
-    }
-    }
+  }
