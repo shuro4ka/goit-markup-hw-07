@@ -3,15 +3,18 @@
     flex-wrap: wrap;
     margin: -15px;
   }
+  
   .gallery__item {
     flex-basis:calc((100% - 90px)/ 3);
     margin: 15px;
     transition: transform var(--animation-function);
   }
+
   .gallery__wrapper {
     position: relative;
     overflow: hidden;
   }
+
   .gallery__content {
     position: absolute;
     top: 0;
