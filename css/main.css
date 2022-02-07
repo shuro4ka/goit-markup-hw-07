@@ -22,11 +22,6 @@ p {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 button {
   cursor: pointer;
 }
@@ -37,6 +32,12 @@ img {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 body {
@@ -182,11 +183,6 @@ body {
 
 .media__icon {
   fill: currentColor;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .contacts {
@@ -469,6 +465,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style: none;
 }
 
 .section-title {
